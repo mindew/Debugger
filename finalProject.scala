@@ -907,14 +907,12 @@ class UI extends MainFrame {
   val toggle = new ToggleButton("Debug Mode")
   val textField = new TextField { columns = 32 }
   val display = new TextArea
-  val envdisplay = new TextArea {
-      background = Color.cyan
+  val envdisplay = new ListView{
+      background = Color.lightGray
   }
 
   display.editable_=(false)
-  envdisplay.editable_=(true)
   val runButton = new Button("Run")
-
 
 
 
